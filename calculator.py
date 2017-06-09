@@ -14,8 +14,8 @@ class calculator(object):
 
     def input(self,resultQ,*args,**kwargs):
         for i in range(1000):
-            self._a = i
-            self._b = i
+            self._a = random.randint(0,9999)
+            self._b = random.randint(0,9999)
             resultQ.put({'value1':self._a,'value2':self._b})
 
     def print(self,resultQ,*args,**kwargs):
